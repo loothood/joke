@@ -1,0 +1,7 @@
+/target
+/migrations/2018-08-15-132833_fill_user
+/migrations/2018-08-15-132837_fill_adjective
+/.idea
+acvilon.iml
+package-lock.json
+migrations/.gitkeep

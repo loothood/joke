@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Кто какой</title>
+        {{> common/meta/header }}
+    </head>
+    <body>
+        <script src="/static/generate.js"></script>
+        <br>
+        <span class="h2 text-success flex-centered">Нарандомили:</span>
+        <p align="center" id="display_random_data"><a href="/user/{{random_user_name}}">{{random_user_name}}</a> сегодня <a href="/adjective/{{random_adjective_value}}">{{random_adjective_value}}</a></p>
+        <button class="btn btn-primary centered" onclick="generate()">Сгенерируй снова!</button>
+        <br>
+        <br>
+        <h2 class="text-gray">Топ 10 сочетаний:</h2>
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>Кто</th>
+                    <th>Какой</th>
+                    <th>Количество совпадений</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each usadjcounts}}
+                    <tr class="active">
+                        <td><a href="/user/{{this.user.id}}">{{this.user.user_name}}</a></td>
+                        <td><a href="/adjective/{{this.adjective.id}}">{{this.adjective.adjective_value}}</a></td>
+                        <td>{{this.count}}</td>
+                    </tr>
+
+                {{/each}}
+            </tbody>
+        </table>
+        {{> common/footer }}
+    </body>
+</html>
