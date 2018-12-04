@@ -3,12 +3,12 @@ Run:
 edit .env - specify your PostgreSQL username, password, host and DB
 install diesel cli
 run:
-``` rust
+``` bash
 cd joke
 diesel setup
 diesel migration run
 ```
 fill db tables users and adjectives
-``` rust
+``` bash
 cargo +nightly-2018-07-24 run
 ```
