@@ -1,4 +1,4 @@
-# This is a joke website
+# This is a joke website. Rust + Rocket
 Run:
 edit .env - specify your PostgreSQL username, password, host and DB
 install diesel cli
@@ -12,3 +12,4 @@ fill db tables users and adjectives
 ``` bash
 cargo +nightly-2018-07-24 run
 ```
+[Here](http://130.193.58.61) you can see it in action. CAUTION! Russian language!
