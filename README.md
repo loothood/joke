@@ -6,7 +6,7 @@ Run:
 
 3)
 ``` bash
-cd joke
+cd joke-website
 diesel setup
 diesel migration run
 ```
